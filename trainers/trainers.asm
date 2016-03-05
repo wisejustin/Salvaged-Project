@@ -1014,35 +1014,17 @@ BrockGroup:
 
 	; party
 
-	db 41, GRAVELER
+	db 12, GEODUDE
+		db TACKLE
 		db DEFENSE_CURL
-		db ROCK_SLIDE
-		db ROLLOUT
-		db EARTHQUAKE
+		db 
+		db 
 
-	db 41, RHYHORN
-		db FURY_ATTACK
-		db SCARY_FACE
-		db EARTHQUAKE
-		db HORN_DRILL
-
-	db 42, OMASTAR
-		db BITE
-		db SURF
-		db PROTECT
-		db SPIKE_CANNON
-
-	db 44, ONIX
-		db BIND
-		db ROCK_SLIDE
+	db 14, ONIX
+		db TACKLE
+		db SCREECH
 		db BIDE
-		db SANDSTORM
-
-	db 42, KABUTOPS
-		db SLASH
-		db SURF
-		db ENDURE
-		db GIGA_DRAIN
+		db 
 
 	db $ff ; end
 
@@ -1060,30 +1042,18 @@ MistyGroup:
 
 	; party
 
-	db 42, GOLDUCK
-		db SURF
-		db DISABLE
-		db PSYCH_UP
-		db PSYCHIC_M
+	db 18, STARYU
+		db TACKLE
+		db WATER_GUN
+		db 
+		db 
 
-	db 42, QUAGSIRE
-		db SURF
-		db AMNESIA
-		db EARTHQUAKE
-		db RAIN_DANCE
-
-	db 44, LAPRAS
-		db SURF
-		db PERISH_SONG
-		db BLIZZARD
-		db RAIN_DANCE
-
-	db 47, STARMIE
-		db SURF
-		db CONFUSE_RAY
-		db RECOVER
-		db ICE_BEAM
-
+	db 21, STARMIE
+		db TACKLE
+		db WATER_GUN
+		db BUBBLEBEAM
+		db 
+		
 	db $ff ; end
 
 ; ================
@@ -7668,7 +7638,7 @@ CamperGroup:
 	db 0 ; normal
 
 	; party
-	db 37, SANDSLASH
+	db 8, DIGLETT
 
 	db $ff ; end
 

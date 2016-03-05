@@ -87,7 +87,7 @@ KrissHouseRadio:
 	end
 
 KrissHouseBookshelf:
-	jumpstd picturebookshelf
+	jumptext KrissHouseBookshelfText
 
 KrissHousePC:
 	opentext
@@ -100,7 +100,7 @@ KrissHousePC:
 	end
 
 KrisRadioText1:
-	text "PROF.OAK'S #MON"
+	text "PROF.ELM'S #MON"
 	line "TALK! Please tune"
 	cont "in next time!"
 	done
@@ -117,6 +117,15 @@ KrisRadioText3:
 KrisRadioText4:
 	text "#MON!"
 	line "#MON CHANNEL…"
+	done
+	
+KrissHouseBookshelfText:
+	text "It's a book"
+	line "about the Orre"
+	cont "Region.I wonder"
+	cont "if I will meet"
+	cont "people from new"
+	cont "Regions!"
 	done
 
 KrissHouse2F_MapEventHeader:

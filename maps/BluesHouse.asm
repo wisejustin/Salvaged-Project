@@ -66,17 +66,12 @@ UnknownScript_0x19b12a:
 	end
 
 UnknownText_0x19b130:
-	text "DAISY: Hi! My kid"
-	line "brother is the GYM"
+	text "DAISY:#MON"
+	line "are living"
+	cont "things! if they"
 
-	para "LEADER in VIRIDIAN"
-	line "CITY."
-
-	para "But he goes out"
-	line "of town so often,"
-
-	para "it causes problems"
-	line "for the trainers."
+	para "get tired, give"
+	line "them a rest!"
 	done
 
 UnknownText_0x19b1b6:

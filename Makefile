@@ -1,9 +1,10 @@
 PYTHON := python
 MD5 := md5sum -c --quiet
 
-.SUFFIXES: .asm .o .gbc .png .2bpp .1bpp .lz .pal .bin .blk .tilemap
+.SUFFIXES:
 .PHONY: all clean crystal crystal11
 .SECONDEXPANSION:
+.PRECIOUS: %.2bpp %.1bpp
 
 poketools := extras/pokemontools
 gfx       := $(PYTHON) gfx.py
@@ -28,10 +29,6 @@ gfx/pics.o
 
 crystal11_obj := $(crystal_obj:.o=11.o)
 
-$(foreach obj, $(crystal_obj:.o=), \
-	$(eval $(obj)_dep := $(shell $(includes) $(obj).asm)) \
-)
-
 
 roms := pokecrystal.gbc
 
@@ -46,9 +43,13 @@ compare: pokecrystal.gbc pokecrystal11.gbc
 	@$(MD5) roms.md5
 
 %.asm: ;
-$(crystal11_obj): %11.o: %.asm $$(%_dep)
+
+%11.o: dep = $(shell $(includes) $(@D)/$*.asm)
+%11.o: %.asm $$(dep)
 	rgbasm -D CRYSTAL11 -o $@ $<
-$(crystal_obj): %.o: %.asm $$(%_dep)
+
+%.o: dep = $(shell $(includes) $(@D)/$*.asm)
+%.o: %.asm $$(dep)
 	rgbasm -o $@ $<
 
 pokecrystal11.gbc: $(crystal11_obj)
@@ -59,16 +60,13 @@ pokecrystal.gbc: $(crystal_obj)
 	rgblink -n $*.sym -m $*.map -o $@ $^
 	rgbfix -Cjv -i BYTE -k 01 -l 0x33 -m 0x10 -p 0 -r 3 -t PM_CRYSTAL $@
 
-
 %.png: ;
 %.2bpp: %.png ; $(gfx) 2bpp $<
 %.1bpp: %.png ; $(gfx) 1bpp $<
-%.lz:   %     ; $(gfx) lz $<
-
+%.lz: % ; $(gfx) lz $<
 
 %.pal: %.2bpp ;
 gfx/pics/%/normal.pal gfx/pics/%/bitmask.asm gfx/pics/%/frames.asm: gfx/pics/%/front.2bpp ;
 %.bin: ;
 %.blk: ;
 %.tilemap: ;
-

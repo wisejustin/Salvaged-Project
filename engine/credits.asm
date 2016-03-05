@@ -7,7 +7,7 @@ SECTION "Credits", ROMX, BANK[CREDITS]
 	const JUNICHI_MASUDA
 	const TETSUYA_WATANABE
 	const SHIGEKI_MORIMOTO
-	const SOUSUKE_TAMADA
+	const WiseJustin
 	const TAKENORI_OOTA
 	const KEN_SUGIMORI
 	const MOTOFUMI_FUJIWARA
@@ -835,7 +835,7 @@ CreditsScript: ; 10acb4
 	db CREDITS_WAIT, 12
 
 	db          PROGRAMMERS, 0
-	db       SOUSUKE_TAMADA, 1
+	db       WiseJustin, 1
 	db       HISASHI_SOGABE, 2
 	db         KEITA_KAGAYA, 3
 	db    YOSHINORI_MATSUDA, 4
@@ -934,7 +934,7 @@ CreditsScript: ; 10acb4
 	db CREDITS_WAIT, 12
 
 	db     TOOL_PROGRAMMING, 1
-	db       SOUSUKE_TAMADA, 2
+	db       WiseJustin, 2
 	db        TAKENORI_OOTA, 3
 
 	db CREDITS_WAIT, 12

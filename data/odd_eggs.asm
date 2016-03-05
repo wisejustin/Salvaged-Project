@@ -105,22 +105,22 @@ prob_total = 0
 ; Pichu
 	prob 8
 	prob 1
-; Cleffa
+; Dratini
 	prob 16
 	prob 3
-; Igglybuff
+; Larvitar
 	prob 16
 	prob 3
-; Smoochum
+; Houndour
 	prob 14
 	prob 2
-; Magby
+; Totodile
 	prob 10
 	prob 2
-; Elekid
+; Chikorita
 	prob 12
 	prob 2
-; Tyrogue
+; Cyndaquil
 	prob 10
 	prob 1
 ; 1fb56e
@@ -182,9 +182,9 @@ OddEgg2:
 	bigdw 9 ; SDef
 	db "EGG@@@@@@@@"
 
-	db CLEFFA
+	db DRATINI
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db WRAP, BIND, DRAGON_RAGE, 0
 	dw 04096 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -208,9 +208,9 @@ OddEgg2:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
-	db CLEFFA
+	db DRATINI
 	db NO_ITEM
-	db POUND, CHARM, DIZZY_PUNCH, 0
+	db WRAP, BIND, DRAGON_RAGE, 0
 	dw 00768 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -234,9 +234,9 @@ OddEgg2:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
-	db IGGLYBUFF
+	db LARVITAR
 	db NO_ITEM
-	db SING, CHARM, DIZZY_PUNCH, 0
+	db BITE, CRUNCH, DIG, 0
 	dw 04096 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -260,9 +260,9 @@ OddEgg2:
 	bigdw 7 ; SDef
 	db "EGG@@@@@@@@"
 
-	db IGGLYBUFF
+	db LARVITAR
 	db NO_ITEM
-	db SING, CHARM, DIZZY_PUNCH, 0
+	db BITE, CRUNCH, DIG, 0
 	dw 00768 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -286,9 +286,9 @@ OddEgg2:
 	bigdw 8 ; SDef
 	db "EGG@@@@@@@@"
 
-	db SMOOCHUM
+	db HOUNDOUR
 	db NO_ITEM
-	db POUND, LICK, DIZZY_PUNCH, 0
+	db EMBER, TACKLE, BITE, 0
 	dw 03584 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -312,9 +312,9 @@ OddEgg2:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
-	db SMOOCHUM
+	db HOUNDOUR
 	db NO_ITEM
-	db POUND, LICK, DIZZY_PUNCH, 0
+	db EMBER, TACKLE, BITE, 0
 	dw 00512 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -338,9 +338,9 @@ OddEgg2:
 	bigdw 12 ; SDef
 	db "EGG@@@@@@@@"
 
-	db MAGBY
+	db TOTODILE
 	db NO_ITEM
-	db EMBER, DIZZY_PUNCH, 0, 0
+	db WATER_GUN, LEER, 0, 0
 	dw 02560 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -364,9 +364,9 @@ OddEgg2:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
-	db MAGBY
+	db TOTODILE
 	db NO_ITEM
-	db EMBER, DIZZY_PUNCH, 0, 0
+	db WATER_GUN, LEER, 0, 0
 	dw 00512 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -390,9 +390,9 @@ OddEgg2:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
-	db ELEKID
+	db CHIKORITA
 	db NO_ITEM
-	db QUICK_ATTACK, LEER, DIZZY_PUNCH, 0
+	db RAZOR_LEAF, LEER, 0, 0
 	dw 03072 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -416,9 +416,9 @@ OddEgg2:
 	bigdw 10 ; SDef
 	db "EGG@@@@@@@@"
 
-	db ELEKID
+	db CHIKORITA
 	db NO_ITEM
-	db QUICK_ATTACK, LEER, DIZZY_PUNCH, 0
+	db RAZOR_LEAF, LEER, 0, 0
 	dw 00512 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -442,9 +442,9 @@ OddEgg2:
 	bigdw 11 ; SDef
 	db "EGG@@@@@@@@"
 
-	db TYROGUE
+	db CYNDAQUIL
 	db NO_ITEM
-	db TACKLE, DIZZY_PUNCH, 0, 0
+	db EMBER, LEER, 0, 0
 	dw 02560 ; OT ID
 	dt 125 ; Exp
 	; Stat exp
@@ -468,9 +468,9 @@ OddEgg2:
 	bigdw 8 ; SDef
 	db "EGG@@@@@@@@"
 
-	db TYROGUE
+	db CYNDAQUIL
 	db NO_ITEM
-	db TACKLE, DIZZY_PUNCH, 0, 0
+	db EMBER, LEER, 0, 0
 	dw 00256 ; OT ID
 	dt 125 ; Exp
 	; Stat exp

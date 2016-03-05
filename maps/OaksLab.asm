@@ -80,11 +80,11 @@ OaksLabPC:
 	jumptext OaksLabPCText
 
 OakWelcomeKantoText:
-	text "OAK: Ah, <PLAY_G>!"
+	text "ELM: Ah, <PLAY_G>!"
 	line "It's good of you"
 
 	para "to come all this"
-	line "way to KANTO."
+	line "way to JOHTO."
 
 	para "What do you think"
 	line "of the trainers"
@@ -107,12 +107,12 @@ OakLabGoodbyeText:
 	done
 
 OakOpenMtSilverText:
-	text "OAK: Wow! That's"
+	text "ELM: Wow! That's"
 	line "excellent!"
 
 	para "You collected the"
 	line "BADGES of GYMS in"
-	cont "KANTO. Well done!"
+	cont "JOHTO. Well done!"
 
 	para "I was right in my"
 	line "assessment of you."
@@ -148,15 +148,15 @@ OakOpenMtSilverText:
 	done
 
 OakNoKantoBadgesText:
-	text "OAK: Hmm? You're"
+	text "ELM: Hmm? You're"
 	line "not collecting"
-	cont "KANTO GYM BADGES?"
+	cont "JOHTO GYM BADGES?"
 
 	para "The GYM LEADERS in"
-	line "KANTO are as tough"
+	line "JOHTO are as tough"
 
 	para "as any you battled"
-	line "in JOHTO."
+	line "in KANTO."
 
 	para "I recommend that"
 	line "you challenge"
@@ -164,8 +164,8 @@ OakNoKantoBadgesText:
 	done
 
 OakYesKantoBadgesText:
-	text "OAK: Ah, you're"
-	line "collecting KANTO"
+	text "ELM: Ah, you're"
+	line "collecting JOHTO"
 	cont "GYM BADGES."
 
 	para "I imagine that"
@@ -189,7 +189,7 @@ OaksAssistant1Text:
 	line "TALK radio program"
 
 	para "isn't aired here"
-	line "in KANTO."
+	line "in JOHTO."
 
 	para "It's a shame--I'd"
 	line "like to hear it."
@@ -206,7 +206,7 @@ OaksAssistant2Text:
 
 OaksAssistant3Text:
 	text "Don't tell anyone,"
-	line "but PROF.OAK'S"
+	line "but PROF.ELM'S"
 
 	para "#MON TALK isn't"
 	line "a live broadcast."
@@ -236,7 +236,7 @@ OaksLabPCText:
 
 	para "…"
 
-	para "PROF.OAK, how is"
+	para "PROF.ELM, how is"
 	line "your research"
 	cont "coming along?"
 
@@ -252,7 +252,7 @@ OaksLabPCText:
 	para "I'm delighted to"
 	line "hear that."
 
-	para "ELM in NEW BARK"
+	para "OAK in Pallet"
 	line "TOWN 8-)"
 	done
 
@@ -262,8 +262,8 @@ OaksLab_MapEventHeader:
 
 .Warps:
 	db 2
-	warp_def $b, $4, 3, PALLET_TOWN
-	warp_def $b, $5, 3, PALLET_TOWN
+	warp_def $b, $4, 1, NEW_BARK_TOWN
+	warp_def $b, $5, 1, NEW_BARK_TOWN
 
 .XYTriggers:
 	db 0
@@ -289,7 +289,7 @@ OaksLab_MapEventHeader:
 
 .PersonEvents:
 	db 4
-	person_event SPRITE_OAK, 2, 4, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Oak, -1
+	person_event SPRITE_ELM, 2, 4, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, Oak, -1
 	person_event SPRITE_SCIENTIST, 8, 1, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, OaksAssistant1Script, -1
 	person_event SPRITE_SCIENTIST, 9, 8, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, OaksAssistant2Script, -1
 	person_event SPRITE_SCIENTIST, 4, 1, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 0, OaksAssistant3Script, -1

@@ -718,13 +718,13 @@ NonTrainerCallerNames: ; 903d6
 	dw .mom
 	dw .bikeshop
 	dw .bill
-	dw .elm
+	dw .oak
 	dw .buena
 
 .none: db "----------@"
 .mom: db "MOM:@"
 .bill: db "BILL:@"
-.elm: db "PROF.ELM:@"
+.oak: db "PROF.OAK:@"
 .bikeshop: db "BIKE SHOP:@"
 .buena: db "BUENA:", $22, "   DISC JOCKEY@"
 ; 90423

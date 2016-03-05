@@ -23,17 +23,13 @@ CooltrainerMScript_0x9b5f1:
 	jumptextfaceplayer UnknownText_0x9b61a
 
 UnknownText_0x9b5f4:
-	text "The GYM LEADER"
-	line "here is totally"
-	cont "cool."
+	text "No! POTIONs re"
+	line "all sould out."
 	done
 
 UnknownText_0x9b61a:
-	text "Have you been to"
-	line "CINNABAR?"
-
-	para "It's an island way"
-	line "south of here."
+	text "This shop sells"
+	line "many ANTIDOTEs"
 	done
 
 ViridianMart_MapEventHeader:

@@ -218,7 +218,7 @@ UnknownText_0x7a604:
 	text "Oh, <PLAYER>…! Our"
 	line "neighbor, PROF."
 
-	para "ELM, was looking"
+	para "OAK, was looking"
 	line "for you."
 
 	para "He said he wanted"
@@ -295,7 +295,7 @@ UnknownText_0x7a850:
 	done
 
 UnknownText_0x7a8b5:
-	text "PROF.ELM is wait-"
+	text "PROF.OAK is wait-"
 	line "ing for you."
 
 	para "Hurry up, baby!"
@@ -303,7 +303,7 @@ UnknownText_0x7a8b5:
 
 UnknownText_0x7a8e5:
 	text "So, what was PROF."
-	line "ELM's errand?"
+	line "OAK's errand?"
 
 	para "…"
 
@@ -349,7 +349,7 @@ NeighborText:
 	line "adamant about"
 
 	para "becoming PROF."
-	line "ELM's assistant."
+	line "OAK's assistant."
 
 	para "She really loves"
 	line "#MON!"
@@ -358,8 +358,8 @@ NeighborText:
 StoveText:
 	text "Mom's specialty!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
+	para "Beef Ramen"
+	line "Noodles"
 	done
 
 SinkText:
@@ -393,8 +393,8 @@ KrissHouse1F_MapEventHeader:
 
 .Warps:
 	db 3
-	warp_def $7, $6, 2, NEW_BARK_TOWN
-	warp_def $7, $7, 2, NEW_BARK_TOWN
+	warp_def $7, $6, 1, PALLET_TOWN
+	warp_def $7, $7, 1, PALLET_TOWN
 	warp_def $0, $9, 1, KRISS_HOUSE_2F
 
 .XYTriggers:

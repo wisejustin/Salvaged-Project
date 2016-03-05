@@ -38,8 +38,9 @@ UnknownText_0x1ac6e7:
 	text "I'm raising #-"
 	line "MON too."
 
-	para "They serve as my"
-	line "private guards."
+	para "When they get"
+	line "strong, they can"
+	cont "protect me!"
 	done
 
 UnknownText_0x1ac720:
@@ -54,12 +55,12 @@ UnknownText_0x1ac720:
 PalletTownSignText:
 	text "PALLET TOWN"
 
-	para "A Tranquil Setting"
-	line "of Peace & Purity"
+	para "Shades of your"
+	line "journey await!"
 	done
 
 RedsHouseSignText:
-	text "RED'S HOUSE"
+	text "<PLAYER>'S HOUSE"
 	done
 
 OaksLabSignText:
@@ -68,7 +69,7 @@ OaksLabSignText:
 	done
 
 BluesHouseSignText:
-	text "BLUE'S HOUSE"
+	text "<RIVAL>'S HOUSE"
 	done
 
 PalletTown_MapEventHeader:
@@ -77,9 +78,9 @@ PalletTown_MapEventHeader:
 
 .Warps:
 	db 3
-	warp_def $5, $5, 1, REDS_HOUSE_1F
+	warp_def $5, $5, 1, KRISS_HOUSE_1F
 	warp_def $5, $d, 1, BLUES_HOUSE
-	warp_def $b, $c, 1, OAKS_LAB
+	warp_def $b, $c, 1, ELMS_LAB
 
 .XYTriggers:
 	db 0

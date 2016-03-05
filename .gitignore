@@ -33,4 +33,5 @@ pokecrystal.txt
 .*.swp
 # swap files for gedit
 *~
-
+crowdmap/
+extras/
