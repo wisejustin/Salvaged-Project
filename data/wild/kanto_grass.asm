@@ -167,54 +167,54 @@
 	; morn
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, SENTRET
+	db 3, RATTATA
 	db 3, PIDGEY
-	db 6, FURRET
+	db 6, PIDGEY
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; day
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, SENTRET
+	db 3, RATTATA
 	db 3, PIDGEY
-	db 6, FURRET
+	db 6, RATICATE
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; nite
-	db 2, HOOTHOOT
+	db 2, PIDGEY
 	db 2, RATTATA
 	db 3, RATTATA
-	db 3, HOOTHOOT
+	db 3, PIDGEY
 	db 6, RATICATE
-	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 4, PIDGEY
+	db 4, PIDGEY
 
 	map ROUTE_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, CATERPIE
-	db 3, LEDYBA
-	db 5, PIDGEY
-	db 7, BUTTERFREE
-	db 7, LEDIAN
-	db 4, PIKACHU
-	db 4, PIKACHU
-	; day
-	db 3, CATERPIE
 	db 3, PIDGEY
+	db 3, RATTATA
 	db 5, PIDGEY
-	db 7, BUTTERFREE
-	db 7, PIDGEOTTO
-	db 4, PIKACHU
-	db 4, PIKACHU
+	db 7, PIDGEY
+	db 7, RATTATA
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
+	; day
+	db 3, PIDGEY
+	db 3, RATTATA
+	db 5, PIDGEY
+	db 7, PIDGEY
+	db 7, RATTATA
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
 	; nite
-	db 3, HOOTHOOT
-	db 3, SPINARAK
-	db 5, HOOTHOOT
-	db 7, NOCTOWL
-	db 7, ARIADOS
-	db 4, NOCTOWL
-	db 4, NOCTOWL
+	db 3, PIDGEY
+	db 3, RATTATA
+	db 5, PIDGEY
+	db 7, PIDGEY
+	db 7, RATTATA
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
 
 	map ROUTE_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -222,26 +222,25 @@
 	db 5, SPEAROW
 	db 5, RATTATA
 	db 8, EKANS
-	db 10, RATICATE
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 5, SPEAROW
+	db 5, RATTATA
+	db 8, EKANS
 	; day
 	db 5, SPEAROW
 	db 5, RATTATA
 	db 8, EKANS
-	db 10, RATICATE
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
+	db 5, SPEAROW
+	db 5, RATTATA
+	db 8, EKANS
+	DB 8, PIDGEY
 	; nite
+	db 5, SPEAROW
 	db 5, RATTATA
-	db 10, RATTATA
-	db 10, RATICATE
-	db 6, ZUBAT
+	db 8, EKANS
+	db 5, SPEAROW
 	db 5, RATTATA
-	db 6, CLEFAIRY
-	db 6, CLEFAIRY
+	db 8, JIGGLYPUFF
+	DB 8, PIDGEY
 
 	map ROUTE_4
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -653,27 +652,24 @@
 	; morn
 	db 3, RATTATA
 	db 3, SPEAROW
-	db 5, SPEAROW
-	db 4, DODUO
-	db 6, PONYTA
-	db 7, FEAROW
-	db 7, FEAROW
+	db 4, NIDORAN_M
+	db 3, NIDORAN_F
+	db 3, MANKEY
+	db 2, SPEAROW
 	; day
 	db 3, RATTATA
 	db 3, SPEAROW
-	db 5, SPEAROW
-	db 4, DODUO
-	db 6, PONYTA
-	db 7, FEAROW
-	db 7, FEAROW
+	db 4, NIDORAN_M
+	db 3, NIDORAN_F
+	db 3, MANKEY
+	db 2, SPEAROW
 	; nite
 	db 3, RATTATA
-	db 3, POLIWAG
-	db 5, RATTATA
-	db 4, POLIWAG
-	db 6, RATTATA
-	db 7, RATTATA
-	db 7, RATTATA
+	db 3, SPEAROW
+	db 4, NIDORAN_M
+	db 3, NIDORAN_F
+	db 3, MANKEY
+	db 2, SPEAROW
 
 	map ROUTE_24
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

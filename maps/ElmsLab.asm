@@ -1442,30 +1442,6 @@ ElmsCustomBookshelf3Text
 	cont "like they're"
 	cont "from the Sinnoh"
 	cont "region!"
-	cont "Hey, there's a"
-	cont "note here..."
-	cont "Want to read it?"
-	yesorno
-	Iftrue YesText:
-	iffalse NoText:
-	done
-	
-YesText:
-	text "Dear Prof. Oak"
-	line "If you make any"
-	cont "new adjustments"
-	cont "to the PokeDex"
-	cont "give me some"
-	cont "credit. You're"
-	cont "not the only"
-	cont "one who worked"
-	cont "on it you know!"
-	cont "From:Prof. Rowan"
-	done
-	
-NoText:
-	text "Best to not be"
-	line "nosey then..."
 	done
 	
 ElmsLab_MapEventHeader:

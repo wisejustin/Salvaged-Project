@@ -800,13 +800,13 @@ PKMNTrainerGroup:
 ; ================
 
 	; CAL (3)
-	db "CAL@"
+	db "Samuel@"
 	db 0 ; normal
 
 	; party
-	db 50, MEGANIUM
-	db 50, TYPHLOSION
-	db 50, FERALIGATR
+	db 10, BULBASAUR
+	db 10, CHARMANDER
+	db 10, SQUIRTLE
 
 	db $ff ; end
 
@@ -1459,10 +1459,8 @@ SchoolboyGroup:
 	db 0 ; normal
 
 	; party
-	db 31, JYNX
-	db 31, ELECTABUZZ
-	db 31, MAGMAR
-
+	db 3, RATTATA
+	
 	db $ff ; end
 
 ; ================
@@ -2272,7 +2270,7 @@ JanineGroup:
 ; ================
 
 	; JANINE (1)
-	db "JANINE@"
+	db "KOGA@"
 	db 1 ; moves
 
 	; party
@@ -2891,8 +2889,7 @@ CooltrainerFGroup:
 	db 0 ; normal
 
 	; party
-	db 38, IVYSAUR
-	db 38, STARMIE
+	db 3, MANKEY
 
 	db $ff ; end
 
@@ -4011,8 +4008,8 @@ BugCatcherGroup:
 	db 0 ; normal
 
 	; party
-	db 32, BEEDRILL
-	db 32, BUTTERFREE
+	db 4, RATTATA
+	db 5, PIDGEY
 
 	db $ff ; end
 
@@ -4023,9 +4020,8 @@ BugCatcherGroup:
 	db 0 ; normal
 
 	; party
-	db 30, BEEDRILL
-	db 30, BEEDRILL
-	db 30, BEEDRILL
+	db 7, NIDORAN_M
+	db 7, NIDORAN_F
 
 	db $ff ; end
 
@@ -4137,7 +4133,7 @@ BugCatcherGroup:
 	db 0 ; normal
 
 	; party
-	db 34, ARIADOS
+	db 5, CATERPIE
 
 	db $ff ; end
 
@@ -7638,7 +7634,8 @@ CamperGroup:
 	db 0 ; normal
 
 	; party
-	db 8, DIGLETT
+	db 11, DIGLETT
+	db 11, SANDSHREW
 
 	db $ff ; end
 
@@ -8560,22 +8557,22 @@ RedGroup:
 ; ================
 
 	; RED (1)
-	db "RED@"
+	db "Justin@"
 	db 1 ; moves
 
 	; party
 
-	db 81, PIKACHU
-		db CHARM
-		db QUICK_ATTACK
-		db THUNDERBOLT
-		db THUNDER
+	db 81, BLASTOISE
+		db HYDRO_PUMP
+		db EARTHQUAKE
+		db ICE_PUNCH
+		db SURF
 
-	db 73, ESPEON
+	db 73, STEELIX
 		db MUD_SLAP
-		db REFLECT
-		db SWIFT
-		db PSYCHIC_M
+		db EARTHQUAKE
+		db MAGNITUDE
+		db IRON_TAIL
 
 	db 75, SNORLAX
 		db AMNESIA
@@ -8583,23 +8580,23 @@ RedGroup:
 		db REST
 		db BODY_SLAM
 
-	db 77, VENUSAUR
-		db SUNNY_DAY
-		db GIGA_DRAIN
-		db SYNTHESIS
-		db SOLARBEAM
+	db 77, GENGAR
+		db HYPNOSIS
+		db NIGHT_SHADE
+		db SHADOW_BALL
+		db DESTINY_BOND
 
-	db 77, CHARIZARD
-		db FLAMETHROWER
+	db 77, GYARADOS
+		db DRAGON_RAGE
+		db FIRE_BLAST
+		db HYDRO_PUMP
+		db HYPER_BEAM
+
+	db 77, ARTICUNO
 		db WING_ATTACK
-		db SLASH
-		db FIRE_SPIN
-
-	db 77, BLASTOISE
-		db RAIN_DANCE
-		db SURF
+		db ICY_WIND
 		db BLIZZARD
-		db WHIRLPOOL
+		db ICE_BEAM
 
 	db $ff ; end
 

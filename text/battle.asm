@@ -274,7 +274,6 @@ BattleText_EnemyIsAboutToUseWillPlayerChangePkmn: ; 0x80aca
 BattleText_EnemySentOut: ; 0x80af8
 	text "<ENEMY>"
 	line "sent out"
-	cont "@"
 	text_from_ram EnemyMonNick
 	text "!"
 	done

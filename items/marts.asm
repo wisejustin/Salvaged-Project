@@ -246,8 +246,8 @@ Mart17: ; 1617b
 
 Mart18: ; 16186
 	db 9 ; # items
-	db ULTRA_BALL
-	db HYPER_POTION
+	db POKE_BALL
+	db POTION
 	db FULL_HEAL
 	db REVIVE
 	db ANTIDOTE
@@ -260,8 +260,8 @@ Mart18: ; 16186
 
 Mart19: ; 16191
 	db 7 ; # items
-	db GREAT_BALL
-	db SUPER_POTION
+	db POKE_BALL
+	db POTION
 	db SUPER_REPEL
 	db ANTIDOTE
 	db PARLYZ_HEAL
