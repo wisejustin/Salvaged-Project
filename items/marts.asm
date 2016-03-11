@@ -245,16 +245,12 @@ Mart17: ; 1617b
 ; 16186
 
 Mart18: ; 16186
-	db 9 ; # items
+	db 5 ; # items
 	db POKE_BALL
 	db POTION
-	db FULL_HEAL
-	db REVIVE
 	db ANTIDOTE
 	db PARLYZ_HEAL
-	db AWAKENING
 	db BURN_HEAL
-	db FLOWER_MAIL
 	db $ff
 ; 16191
 
@@ -262,11 +258,11 @@ Mart19: ; 16191
 	db 7 ; # items
 	db POKE_BALL
 	db POTION
-	db SUPER_REPEL
+	db ESCAPE_ROPE
 	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
 	db BURN_HEAL
+	db AWAKENING
+	db PARLYZ_HEAL
 	db $ff
 ; 1619a
 

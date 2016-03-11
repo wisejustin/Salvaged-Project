@@ -92,21 +92,15 @@ MountMoonSilverMovementAfter:
 MountMoonSilverTextBefore:
 	text "<......> <......> <......>"
 
-	para "It's been a while,"
-	line "<PLAYER>."
+	para "Hey <PLAYER>!,"
+	line "so you beat the"
 
-	para "…Since I lost to"
-	line "you, I thought"
+	para "Gym Leader?"
+	line "Well lets just"
 
-	para "about what I was"
-	line "lacking with my"
-	cont "#MON…"
-
-	para "And we came up"
-	line "with an answer."
-
-	para "<PLAYER>, now we'll"
-	line "show you!"
+	para "see how strong"
+	line "your #MON"
+	cont "are!"
 	done
 
 MountMoonSilverTextWin:
@@ -185,4 +179,4 @@ MountMoon_MapEventHeader:
 
 .PersonEvents:
 	db 1
-	person_event SPRITE_SILVER, 3, 7, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_MT_MOON_RIVAL
+	person_event SPRITE_BLUE, 3, 7, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, ObjectEvent, EVENT_MT_MOON_RIVAL

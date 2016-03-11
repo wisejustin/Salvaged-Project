@@ -1321,11 +1321,11 @@ YoungsterGroup:
 ; ================
 
 	; YOUNGSTER (9)
-	db "WARREN@"
+	db "JOEY@"
 	db 0 ; normal
 
 	; party
-	db 35, FEAROW
+	db 8, RATTATA
 
 	db $ff ; end
 
@@ -1336,8 +1336,8 @@ YoungsterGroup:
 	db 0 ; normal
 
 	; party
-	db 33, RATICATE
-	db 33, ARBOK
+	db 9, WEEDLE
+	db 9, CATERPIE
 
 	db $ff ; end
 
@@ -5551,41 +5551,11 @@ Rival2Group:
 
 	; party
 
-	db 41, SNEASEL
-		db QUICK_ATTACK
-		db SCREECH
-		db FAINT_ATTACK
-		db FURY_CUTTER
-
-	db 42, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
-
-	db 41, MAGNETON
-		db THUNDERSHOCK
-		db SONICBOOM
-		db THUNDER_WAVE
-		db SWIFT
-
-	db 43, GENGAR
-		db MEAN_LOOK
-		db CURSE
-		db SHADOW_BALL
-		db CONFUSE_RAY
-
-	db 43, ALAKAZAM
-		db DISABLE
-		db RECOVER
-		db FUTURE_SIGHT
-		db PSYCHIC_M
-
-	db 45, MEGANIUM
+	db 10, BULBASAUR
 		db RAZOR_LEAF
-		db POISONPOWDER
-		db BODY_SLAM
-		db LIGHT_SCREEN
+		db LEECH_SEED
+		db TACKLE
+        db
 
 	db $ff ; end
 
@@ -5597,41 +5567,11 @@ Rival2Group:
 
 	; party
 
-	db 41, SNEASEL
-		db QUICK_ATTACK
-		db SCREECH
-		db FAINT_ATTACK
-		db FURY_CUTTER
-
-	db 42, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
-
-	db 41, MAGNETON
-		db THUNDERSHOCK
-		db SONICBOOM
-		db THUNDER_WAVE
-		db SWIFT
-
-	db 43, GENGAR
-		db MEAN_LOOK
-		db CURSE
-		db SHADOW_BALL
-		db CONFUSE_RAY
-
-	db 43, ALAKAZAM
-		db DISABLE
-		db RECOVER
-		db FUTURE_SIGHT
-		db PSYCHIC_M
-
-	db 45, TYPHLOSION
+	db 10, CHARMANDER
+		db EMBER
 		db SMOKESCREEN
-		db QUICK_ATTACK
-		db FLAME_WHEEL
-		db SWIFT
+		db TACKLE
+	    db
 
 	db $ff ; end
 
@@ -5643,41 +5583,11 @@ Rival2Group:
 
 	; party
 
-	db 41, SNEASEL
-		db QUICK_ATTACK
-		db SCREECH
-		db FAINT_ATTACK
-		db FURY_CUTTER
-
-	db 42, GOLBAT
-		db LEECH_LIFE
-		db BITE
-		db CONFUSE_RAY
-		db WING_ATTACK
-
-	db 41, MAGNETON
-		db THUNDERSHOCK
-		db SONICBOOM
-		db THUNDER_WAVE
-		db SWIFT
-
-	db 43, GENGAR
-		db MEAN_LOOK
-		db CURSE
-		db SHADOW_BALL
-		db CONFUSE_RAY
-
-	db 43, ALAKAZAM
-		db DISABLE
-		db RECOVER
-		db FUTURE_SIGHT
-		db PSYCHIC_M
-
-	db 45, FERALIGATR
-		db RAGE
-		db WATER_GUN
-		db SCARY_FACE
-		db SLASH
+	db 10, SQUIRTLE
+		db BUBBLE
+		db WITHDRAW
+		db TACKLE
+		db 
 
 	db $ff ; end
 
@@ -6392,9 +6302,9 @@ FirebreatherGroup:
 	db 0 ; normal
 
 	; party
-	db 29, MAGMAR
-	db 32, WEEZING
-	db 29, MAGMAR
+	db 8, RATTATA
+	db 8, PIDGEY
+	db 10, EKANS
 
 	db $ff ; end
 
@@ -6429,8 +6339,9 @@ FirebreatherGroup:
 	db 0 ; normal
 
 	; party
-	db 32, KOFFING
-	db 32, SLUGMA
+	db 8, RATTATA
+	db 8, PIDGEY
+	db 10, EKANS
 
 	db $ff ; end
 
