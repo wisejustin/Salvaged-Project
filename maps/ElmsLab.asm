@@ -271,6 +271,12 @@ ElmDirectionsScript:
 	opentext
 	writetext ElmDirectionsText2
 	waitbutton
+	buttonsound
+	waitsfx
+	writetext Pokedex
+	playsound SFX_ITEM
+	waitsfx
+	setflag ENGINE_POKEDEX
 	closetext
 	spriteface ELMSLAB_ELM, DOWN
 	opentext
@@ -480,7 +486,7 @@ AideScript_GivePotions:
 	opentext
 	writetext AideText_GiveYouPotions
 	buttonsound
-	setflag ENGINE_POKEDEX
+	verbosegiveitem POTION
 	writetext AideText_AlwaysBusy
 	waitbutton
 	closetext
@@ -790,7 +796,9 @@ ElmText_Accepted:
 
 ElmText_Refused:
 	text "But… Please, I"
-	line "need your help!"
+	line "need your help"
+	cont "to complete the"
+	cont "#DEX"
 	done
 
 ElmText_ResearchAmbitions:
@@ -820,34 +828,34 @@ ElmText_GotAnEmail:
 ElmText_MissionFromMrPokemon:
 	text "Hey, listen."
 
-	para "I have an acquain-"
-	line "tance called MR."
-	cont "#MON."
+	para "I have an task"
+	line "for you.The"
+	cont "#MON Leauge"
 
-	para "He keeps finding"
-	line "weird things and"
+	para "needs more enemy's"
+	line "to face and they"
 
-	para "raving about his"
-	line "discoveries."
+	para "asked if I could"
+	line "help start off"
 
-	para "Anyway, I just got"
-	line "an e-mail from him"
+	para "more Trainers with"
+	line "#MON,They are"
 
-	para "saying that this"
-	line "time it's real."
+	para "quite nice people"
+	line "but are always"
 
-	para "It is intriguing,"
-	line "but we're busy"
+	para "looking for a new"
+	line "challenger! but"
 
-	para "with our #MON"
-	line "research…"
+	para "You're the only"
+	line "Kid in town now."
 
 	para "Wait!"
 
 	para "I know!"
 
-	para "<PLAY_G>, can you"
-	line "go in our place?"
+	para "<PLAY_G>, will you"
+	line "go challenge them?"
 	done
 
 ElmText_ChooseAPokemon:
@@ -915,34 +923,33 @@ ReceivedStarterText:
 	done
 
 ElmDirectionsText1:
-	text "MR.#MON lives a"
-	line "little bit beyond"
+	text "<PLAYER>, im"
+	line "counting on you"
 
-	para "VIRIDIAN, the"
-	line "next city over."
+	para "to try to complete"
+	line "the #DEX."
 
-	para "It's almost a"
-	line "direct route"
+	para "It's a hard task"
+	line "to ask of a kid"
 
-	para "there, so you"
-	line "can't miss it."
+	para "but my grandson"
+	line "is to naive to"
 
-	para "But just in case,"
-	line "here's my phone"
+	para "achieve my goal,"
+	line "so I want you to"
 
-	para "number. Call me if"
+	para "Call me if"
 	line "anything comes up!"
 	done
 
 ElmDirectionsText2:
-	text "If your #MON is"
-	line "hurt, you should"
+	text "I almost forgot,"
+	line "what kind of"
 
-	para "heal it with this"
-	line "machine."
+	para "#MON Trainer"
+	line "would you be"
 
-	para "Feel free to use"
-	line "it anytime."
+	para "without this!"
 	done
 
 ElmDirectionsText3:
@@ -956,13 +963,15 @@ GotElmsNumberText:
 	done
 
 ElmDescribesMrPokemonText:
-	text "MR.#MON goes"
-	line "everywhere and"
-	cont "finds rarities."
+	text "I have updated the"
+	line "#dex since the"
+	cont "last time anyone"
 
-	para "Too bad they're"
-	line "just rare and"
-	cont "not very useful…"
+	para "has used it! it"
+	line "has updated"
+	cont "descriptions of"
+	cont "all the #MON"
+	cont "in Kanto and Johto"
 	done
 
 ElmPokeBallText:
@@ -1235,17 +1244,15 @@ ElmsLabSignpostText_Egg:
 	done
 
 AideText_GiveYouPotions:
-	text "<PLAY_G>, Prof."
-	line "OAK forgot to"
-	cont "Give you this!"
+	text "<PLAY_G>, I want"
+	line "you to have this"
+	cont "for your errand."
 	done
 
 AideText_AlwaysBusy:
 	text "There are only two"
 	line "of us, so we're"
-	cont "always busy"
-	cont "and tend to forget"
-	cont "things."
+	cont "always busy."
 	done
 
 AideText_TheftTestimony:
@@ -1449,6 +1456,11 @@ ElmsCustomBookshelf3Text
 	cont "region!"
 	done
 	
+Pokedex
+	text "<PLAYER> received"
+	line "#DEX!"
+	done
+
 ElmsLab_MapEventHeader:
 	; filler
 	db 0, 0

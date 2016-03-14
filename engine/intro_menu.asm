@@ -748,6 +748,9 @@ OakSpeech: ; 0x5f99
 	call NamePlayer
 	ld hl, OakText7
 	call PrintText
+	ld a,DEXMODE_OLD
+	ld [wCurrentDexMode],a
+	ld [wLastDexMode],a
 	ret
 
 OakText1: ; 0x6045
