@@ -2,9 +2,9 @@
 	db "TURTLE@" ; species name
 	dw 303, 500 ; height, width
 	
-	db   "Its long, furry"
-	next "tail is a symbol"
-	next "of longevity,"
-	page "making it quite"
-	next "popular among"
-	next "older people.@"
+	db   "When trapped,this"
+	next "Pokemon will hide"
+	next "its head,but its"
+	page "tail will still"
+	next "stick out a"
+	next "little bit.@"

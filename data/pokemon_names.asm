@@ -80,7 +80,7 @@
 	db "Slowbro@@@"
 	db "Magnemite@"
 	db "Magneton@@"
-	db "Farfetch'd"
+	db "Farfetchd@"
 	db "Doduo@@@@@"
 	db "Dodrio@@@@"
 	db "Seel@@@@@@"

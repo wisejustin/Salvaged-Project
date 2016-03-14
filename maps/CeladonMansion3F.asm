@@ -87,11 +87,14 @@ UnknownText_0x716ce:
 	text "Is that right?"
 
 	para "I'm the GAME"
-	line "DESIGNER!"
+	line "CREATOR!"
 
-	para "Filling up your"
-	line "#DEX is tough,"
-	cont "but don't give up!"
+	para "This was a big"
+	line "Idea i wanted to"
+	cont "do for the longest"
+	cont "time but never had"
+	cont "much help. Thanks"
+	cont "Skeetendo."
 	done
 
 UnknownText_0x71725:
@@ -107,7 +110,7 @@ UnknownText_0x71760:
 	done
 
 UnknownText_0x71763:
-	text "The GRAPHIC ARTIST"
+	text "Justins Teacher"
 	line "will print out a"
 	cont "DIPLOMA for you."
 
@@ -116,15 +119,16 @@ UnknownText_0x71763:
 	done
 
 UnknownText_0x717b4:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
+	text "I'm Justins"
+	line "Teacher, Mateo."
 
-	para "I drew you!"
+	para "I helped him"
+	line "make you!"
 	done
 
 UnknownText_0x717d8:
-	text "I'm the GRAPHIC"
-	line "ARTIST."
+	text "I'm Justins"
+	line "Teacher."
 
 	para "Oh, you completed"
 	line "your #DEX?"

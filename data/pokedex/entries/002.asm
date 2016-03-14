@@ -2,9 +2,9 @@
 	db "SEED@" ; species name
 	dw 303, 290 ; height, width
 	
-	db   "The bulb on its"
-	next "back grows as it"
-	next "absorbs nutrients."
-	page "The bulb gives off"
-	next "a pleasant aroma"
-	next "when it blooms.@"
+	db   "There is a plant"
+	next "bulb on its back."
+	next "When it absorbs"
+	page "nutrients,the bulb"
+	next "is said to blossom"
+	next "into a flower@"

@@ -121,7 +121,7 @@ KrisRadioText4:
 	
 KrissHouseBookshelfText:
 	text "It's a book"
-	line "about the Orre"
+	line "about the Johto"
 	cont "Region.I wonder"
 	cont "if I will meet"
 	cont "people from new"

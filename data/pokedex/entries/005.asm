@@ -2,9 +2,9 @@
 	db "FLAME@" ; species name
 	dw 307, 420 ; height, width
 	
-	db   "If it becomes"
-	next "agitated during"
-	next "battle, it spouts"
-	page "intense flames,"
-	next "incinerating its"
-	next "surroundings.@"
+	db   "It lashes about"
+	next "with its tail to"
+	next "knock down its foe."
+	page "It then tears up"
+	next "the fallen enemy"
+	next "with sharp claws.@"

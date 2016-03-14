@@ -225,6 +225,7 @@
 	db 5, SPEAROW
 	db 5, RATTATA
 	db 8, EKANS
+	db 8, EKANS
 	; day
 	db 5, SPEAROW
 	db 5, RATTATA
@@ -650,29 +651,29 @@
 	map ROUTE_22
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 4, RATTATA
-	db 4, NIDORAN_M
-	db 4, NIDORAN_F
+	db 3, SPEAROW
+	db 3, MANKEY
 	db 5, SPEAROW
-	db 6, MANKEY
-	db 6, RATTATA
-	db 6, SPEAROW
+	db 4, SPEAROW
+	db 4, MANKEY
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
 	; day
-	db 4, RATTATA
-	db 4, NIDORAN_M
-	db 4, NIDORAN_F
+	db 3, SPEAROW
+	db 3, MANKEY
 	db 5, SPEAROW
-	db 6, MANKEY
-	db 6, RATTATA
-	db 6, SPEAROW
+	db 4, SPEAROW
+	db 4, MANKEY
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
 	; nite
-	db 4, RATTATA
-	db 4, NIDORAN_M
-	db 4, NIDORAN_F
+	db 3, SPEAROW
+	db 3, MANKEY
 	db 5, SPEAROW
-	db 6, MANKEY
-	db 6, RATTATA
-	db 6, SPEAROW
+	db 4, SPEAROW
+	db 4, MANKEY
+	db 4, NIDORAN_F
+	db 4, NIDORAN_M
 	
 	map ROUTE_24
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

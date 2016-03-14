@@ -2,9 +2,9 @@
 	db "WORM@" ; species name
 	dw 100, 60 ; height, width
 	
-	db   "It crawls into"
-	next "foliage where it"
-	next "camouflages itself"
-	page "among leaves that"
-	next "are the same color"
-	next "as its body.@"
+	db   "For protection,it"
+	next "releases a nasty"
+	next "stench from the"
+	page "antennae on its"
+	next "head to drive"
+	next "away enemies.@"

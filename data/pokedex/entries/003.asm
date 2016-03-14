@@ -2,9 +2,9 @@
 	db "SEED@" ; species name
 	dw 607, 2210 ; height, width
 	
-	db   "As it warms it-"
-	next "self and absorbs"
-	next "the sunlight, its"
-	page "flower petals"
-	next "release a pleasant"
-	next "fragrance.@"
+	db   "By spreading the"
+	next "broad petals of"
+	next "its flower and"
+	page "catching the suns"
+	next "rays it fills its"
+	next "body with power.@"

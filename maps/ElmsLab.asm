@@ -480,7 +480,7 @@ AideScript_GivePotions:
 	opentext
 	writetext AideText_GiveYouPotions
 	buttonsound
-	verbosegiveitem POTION
+	setflag ENGINE_POKEDEX
 	writetext AideText_AlwaysBusy
 	waitbutton
 	closetext
@@ -1235,15 +1235,17 @@ ElmsLabSignpostText_Egg:
 	done
 
 AideText_GiveYouPotions:
-	text "<PLAY_G>, I want"
-	line "you to have this"
-	cont "for your errand."
+	text "<PLAY_G>, Prof."
+	line "OAK forgot to"
+	cont "Give you this!"
 	done
 
 AideText_AlwaysBusy:
 	text "There are only two"
 	line "of us, so we're"
-	cont "always busy."
+	cont "always busy"
+	cont "and tend to forget"
+	cont "things."
 	done
 
 AideText_TheftTestimony:
@@ -1333,14 +1335,17 @@ ElmsLabTravelTip1Text:
 	text "<PLAYER> opened a"
 	line "book."
 
-	para "Diary Enrty 1:"
+	para "Pokedex Creation"
 
-	para "I met an old"
-	line "friend of mine"
-	cont "in the Latio"
-	cont "region. I've yet"
-	cont "to see that"
-	cont "pokemon again."
+	para "Professor Rowan"
+	line "Came from the"
+	cont "Sinnoh region to"
+	cont "help calibrate"
+	cont "the older model"
+	cont "of the pokedex."
+	cont "It has newer"
+	cont "descriptions of"
+	cont "Known #MON!"
 	done
 
 ElmsLabTravelTip2Text:
@@ -1350,7 +1355,7 @@ ElmsLabTravelTip2Text:
 	para "Diary Entry 2:"
 
 	para "My first pokemon"
-	line "was my Charmeleon."
+	line "was my Charmander."
 	cont "I held it in a"
 	cont "prototype version"
 	cont "of the newer"
