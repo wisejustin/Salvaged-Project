@@ -2,9 +2,9 @@
 	db "COCOON@" ; species name
 	dw 204, 220 ; height, width
 	
-	db   "This is its pre-"
-	next "evolved form. At"
-	next "this stage, it can"
-	page "only harden, so it"
-	next "remains motionless"
-	next "to avoid attack.@"
+	db   "A steel-hard shell"
+	next "protects its body."
+	next "It quietly endures"
+	page "hardship while"
+	next "awaiting evolution"
+	next ".@"

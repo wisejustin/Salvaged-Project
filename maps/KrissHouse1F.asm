@@ -44,6 +44,8 @@ UnknownScript_0x7a4f6:
 	scall UnknownScript_0x7a57e
 	setflag ENGINE_POKEGEAR
 	setflag ENGINE_PHONE_CARD
+	setflag ENGINE_RADIO_CARD
+	setflag ENGINE_EXPN_CARD
 	addcellnum PHONE_MOM
 	dotrigger $1
 	setevent EVENT_KRISS_HOUSE_MOM_1

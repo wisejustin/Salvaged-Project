@@ -2,9 +2,9 @@
 	db "TINY BIRD@" ; species name
 	dw 100, 40 ; height, width
 	
-	db   "It rapidly flaps"
-	next "its wings in the"
-	next "grass, stirring up"
-	page "a dust cloud that"
-	next "drives insect prey"
-	next "out into the open.@"
+	db   "A common sight in"
+	next "forests and woods."
+	next "It flaps its wings"
+	page "at ground level to"
+	next "kick up blinding"
+	next "sand.@"

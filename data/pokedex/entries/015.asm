@@ -2,9 +2,9 @@
 	db "POISON BEE@" ; species name
 	dw 303, 650 ; height, width
 	
-	db   "It uses sharp,"
-	next "poisonous stings"
-	next "to defeat prey,"
-	page "then takes the"
-	next "victim back to its"
-	next "nest for food.@"
+	db   "It has three toxic"
+	next "tingers on its"
+	next "forelegs and tail."
+	page "They are used to"
+	next "jab its enemy"
+	next "repeatedly@"

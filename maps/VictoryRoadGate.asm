@@ -105,8 +105,8 @@ VictoryRoadGate_MapEventHeader:
 
 .Warps:
 	db 8
-	warp_def $7, $11, 1, ROUTE_22
-	warp_def $7, $12, 1, ROUTE_22
+	warp_def $D, $12, 1, ROUTE_22
+	warp_def $D, $13, 1, ROUTE_22
 	warp_def $11, $9, 1, ROUTE_26
 	warp_def $11, $a, 1, ROUTE_26
 	warp_def $0, $9, 1, VICTORY_ROAD
@@ -116,13 +116,13 @@ VictoryRoadGate_MapEventHeader:
 
 .XYTriggers:
 	db 1
-	xy_trigger 0, $b, $a, $0, UnknownScript_0x9b9fd, $0, $0
+	xy_trigger 0, $7, $12, $0, UnknownScript_0x9b9fd, $0, $0
 
 .Signposts:
 	db 0
 
 .PersonEvents:
 	db 3
-	person_event SPRITE_OFFICER, 11, 8, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, OfficerScript_0x9ba03, -1
+	person_event SPRITE_OFFICER, 7, 16, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, OfficerScript_0x9ba03, -1
 	person_event SPRITE_BLACK_BELT, 5, 7, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackBeltScript_0x9ba21, EVENT_OPENED_MT_SILVER
 	person_event SPRITE_BLACK_BELT, 5, 12, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, PERSONTYPE_SCRIPT, 0, BlackBeltScript_0x9ba24, EVENT_FOUGHT_SNORLAX

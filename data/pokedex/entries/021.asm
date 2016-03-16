@@ -2,9 +2,9 @@
 	db "TINY BIRD@" ; species name
 	dw 100, 40 ; height, width
 	
-	db   "To protect its"
-	next "territory, it"
-	next "flies around"
-	page "ceaselessly,"
-	next "making high-"
-	next "pitched cries.@"
+	db   "Very protective of"
+	next "its territory. It"
+	next "flaps its short"
+	page "wings busily to"
+	next "dart around at"
+	next "high speeds.@"

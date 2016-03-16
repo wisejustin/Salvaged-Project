@@ -2,9 +2,9 @@
 	db "HAIRY BUG@" ; species name
 	dw 100, 70 ; height, width
 	
-	db   "The barb on top of"
-	next "its head secretes"
-	next "a strong poison."
-	page "It uses this toxic"
-	next "barb to protect"
-	next "itself.@"
+	db   "Often found in"
+	next "forests or praries"
+	next "It has sharp,toxic"
+	page "barbs around two"
+	next "inches above its"
+	next "head.@"

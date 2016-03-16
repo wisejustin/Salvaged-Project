@@ -9,12 +9,15 @@ BluesHouse_MapScriptHeader:
 	db 0
 
 DaisyScript_0x19b0d0:
-	faceplayer
 	opentext
-	checkcode VAR_HOUR
-	if_equal $f, UnknownScript_0x19b0de
-	writetext UnknownText_0x19b130
+	writetext Intro
 	waitbutton
+	buttonsound
+	waitsfx
+	writetext TownMap
+	playsound SFX_ITEM
+	waitsfx
+	setflag ENGINE_MAP_CARD
 	closetext
 	end
 
@@ -139,6 +142,22 @@ UnknownText_0x19b377:
 	cont "groom an EGG."
 	done
 
+Intro
+	text "Grandpa asked you"
+	line "to run an errand?"
+	cont "Here, this will"
+	cont "help you!"
+	done
+	
+TownMap
+	text "<PLAYER> received"
+	line "The Map Card!"
+	done
+	
+nocard
+	text "I hope that helps"
+	done
+	
 BluesHouse_MapEventHeader:
 	; filler
 	db 0, 0

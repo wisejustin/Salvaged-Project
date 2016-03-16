@@ -485,7 +485,6 @@ AideScript_WalkPotions2:
 AideScript_GivePotions:
 	opentext
 	writetext AideText_GiveYouPotions
-	buttonsound
 	verbosegiveitem POTION
 	writetext AideText_AlwaysBusy
 	waitbutton
@@ -953,8 +952,9 @@ ElmDirectionsText2:
 	done
 
 ElmDirectionsText3:
-	text "<PLAY_G>, I'm"
-	line "counting on you!"
+	text "I updated the"
+	line "#DEX, I hope"
+	cont "you like it!"
 	done
 
 GotElmsNumberText:
@@ -1244,9 +1244,10 @@ ElmsLabSignpostText_Egg:
 	done
 
 AideText_GiveYouPotions:
-	text "<PLAY_G>, I want"
-	line "you to have this"
-	cont "for your errand."
+	text "<PLAY_G>,Do you"
+	line "want to have "
+	cont "these for your"
+	cont "errand?"
 	done
 
 AideText_AlwaysBusy:
@@ -1459,6 +1460,11 @@ ElmsCustomBookshelf3Text
 Pokedex
 	text "<PLAYER> received"
 	line "#DEX!"
+	done
+	
+refuse_potions
+	text "thats okay,I just"
+	line "wanted to help."
 	done
 
 ElmsLab_MapEventHeader:

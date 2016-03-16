@@ -2,9 +2,9 @@
 	db "BIRD@" ; species name
 	dw 307, 660 ; height, width
 	
-	db   "It slowly flies in"
-	next "a circular pat-"
-	next "tern, all the"
-	page "while keeping a"
-	next "sharp lookout for"
-	next "prey.@"
+	db   "The claws on its"
+	next "feet are well"
+	next "developed. it can"
+	page "carry prey such"
+	next "as Exeggute to its"
+	next "nest 60 miles away@"
