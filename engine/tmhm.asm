@@ -79,7 +79,7 @@ TMHMMoves: ; 1167a
 	db MUD_SLAP
 	db DOUBLE_TEAM
 	db ICE_PUNCH
-	db SWAGGER
+	db BIDE ;swagger TM34
 	db SLEEP_TALK
 	db SLUDGE_BOMB
 	db SANDSTORM

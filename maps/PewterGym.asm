@@ -30,6 +30,13 @@ BrockScript_0x1a2864:
 	waitsfx
 	setflag ENGINE_BOULDERBADGE
 	writetext UnknownText_0x1a2a57
+	buttonsound
+	verbosegiveitem TM_SWAGGER
+	playsound SFX_ITEM
+	waitsfx
+	closetext
+	opentext
+	writetext got_bide
 	waitbutton
 	closetext
 	end
@@ -126,6 +133,8 @@ UnknownText_0x1a2a57:
 
 	para "#MON even more"
 	line "powerful."
+	cont "I also want to"
+	cont "give you this."
 	done
 
 UnknownText_0x1a2ada:
@@ -182,7 +191,24 @@ PewterGymGuyWinText:
 	text "All right! Let's"
 	line "get happening!"
 	prompt
-
+	
+got_bide:
+	text "A TM contains a"
+	line "technique that"
+	cont "can be taught to"
+	cont "a #MON! A TM"
+	cont "is good only once!"
+	cont "so when you use"
+	cont "one to teach a new"
+	cont "technique,pick the"
+	cont "#MON carefully!"
+	cont "TM34 contains Bide"
+	cont "Your #MON will"
+	cont "absorb damage in"
+	cont "in battle then pay"
+	cont "it back double!"
+	done
+	
 PewterGym_MapEventHeader:
 	; filler
 	db 0, 0
@@ -203,5 +229,5 @@ PewterGym_MapEventHeader:
 .PersonEvents:
 	db 3
 	person_event SPRITE_BROCK, 1, 5, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BROWN, PERSONTYPE_SCRIPT, 0, BrockScript_0x1a2864, -1
-	person_event SPRITE_YOUNGSTER, 5, 2, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerCamperJerry, -1
+	person_event SPRITE_YOUNGSTER, 7, 3, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, (1 << 3) | PAL_OW_GREEN, PERSONTYPE_TRAINER, 3, TrainerCamperJerry, -1
 	person_event SPRITE_GYM_GUY, 11, 6, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, (1 << 3) | PAL_OW_BLUE, PERSONTYPE_SCRIPT, 1, PewterGymGuyScript, -1
