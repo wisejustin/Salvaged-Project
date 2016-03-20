@@ -28,7 +28,7 @@ ENDM
 	trigger_def LANCES_ROOM,                            wLancesRoomTrigger
 	trigger_def HALL_OF_FAME,                           wHallOfFameTrigger
 	trigger_def ROUTE_27,                               wRoute27Trigger
-	trigger_def NEW_BARK_TOWN,                          wNewBarkTownTrigger
+	trigger_def PALLET_TOWN,                          wNewBarkTownTrigger
 	trigger_def ELMS_LAB,                               wElmsLabTrigger
 	trigger_def KRISS_HOUSE_1F,                         wKrissHouse1FTrigger
 	trigger_def ROUTE_29,                               wRoute29Trigger

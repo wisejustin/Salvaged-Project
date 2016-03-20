@@ -283,10 +283,17 @@ ElmDirectionsScript:
 	writetext ElmDirectionsText3
 	waitbutton
 	closetext
+	opentext
+	writetext ElmsLabOfficerText1
+	buttonsound
+	special SpecialNameRival
+	writetext ElmsLabOfficerText2
+	waitbutton
+	closetext
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	setevent EVENT_RIVAL_CHERRYGROVE_CITY
 	dotrigger $5
-	domaptrigger NEW_BARK_TOWN, $1
+	domaptrigger PALLET_TOWN, $1
 	end
 
 ElmDescribesMrPokemonScript:
@@ -1244,10 +1251,10 @@ ElmsLabSignpostText_Egg:
 	done
 
 AideText_GiveYouPotions:
-	text "<PLAY_G>,Do you"
-	line "want to have "
+	text "<PLAY_G>,I want"
+	line "you to have "
 	cont "these for your"
-	cont "errand?"
+	cont "errand!"
 	done
 
 AideText_AlwaysBusy:
@@ -1299,24 +1306,12 @@ AideText_ExplainBalls:
 	done
 
 ElmsLabOfficerText1:
-	text "I heard a #MON"
-	line "was stolen here…"
-
-	para "I was just getting"
-	line "some information"
-	cont "from PROF.OAK."
-
-	para "Apparently, it was"
-	line "a young male with"
-	cont "long, blue hair…"
-
-	para "What?"
-
-	para "You battled a"
-	line "trainer like that?"
-
-	para "Did you happen to"
-	line "get his name?"
+	text "Oh yea <PLAYER>"
+	line "one last thing."
+	cont "I have been in"
+	cont "a coma for a while"
+	cont "can you tell me my"
+	cont "Sons name?"
 	done
 
 ElmsLabOfficerText2:
@@ -1324,7 +1319,9 @@ ElmsLabOfficerText2:
 	line "was his name."
 
 	para "Thanks for helping"
-	line "my investigation!"
+	line "me.Tell him I said"
+	cont "hey next time you"
+	cont "see him!"
 	done
 
 ElmsLabWindowText1:
