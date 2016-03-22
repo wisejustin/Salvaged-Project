@@ -554,10 +554,10 @@ InitRoamMons: ; 2a2a0
 	ld [wRoamMon2MapNumber], a
 
 ; suicune starting map
-;	ld a, GROUP_ROUTE_38
-;	ld [wRoamMon3MapGroup], a
-;	ld a, MAP_ROUTE_38
-;	ld [wRoamMon3MapNumber], a
+	ld a, GROUP_ROUTE_38
+	ld [wRoamMon3MapGroup], a
+	ld a, MAP_ROUTE_38
+	ld [wRoamMon3MapNumber], a
 
 ; hp
 	xor a ; generate new stats
@@ -582,7 +582,7 @@ CheckEncounterRoamMon: ; 2a2ce
 	jr nc, .DontEncounterRoamMon
 	and %00000011 ; Of that, a 3/4 chance.  Running total: 75/256, or around 29.3%.
 	jr z, .DontEncounterRoamMon
-	dec a ; 1/3 chance that it's Entei, 1/3 chance that it's Raikou
+	dec a ; 1/3 chance that it's MOLTRES, 1/3 chance that it's ZAPDOS
 ; Compare its current location with yours
 	ld hl, wRoamMon1MapGroup
 	ld c, a
@@ -621,7 +621,7 @@ endr
 UpdateRoamMons: ; 2a30d
 	ld a, [wRoamMon1MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipRaikou
+	jr z, .SkipZAPDOS
 	ld b, a
 	ld a, [wRoamMon1MapNumber]
 	ld c, a
@@ -631,10 +631,10 @@ UpdateRoamMons: ; 2a30d
 	ld a, c
 	ld [wRoamMon1MapNumber], a
 
-.SkipRaikou
+.SkipZAPDOS
 	ld a, [wRoamMon2MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipEntei
+	jr z, .SkipMOLTRES
 	ld b, a
 	ld a, [wRoamMon2MapNumber]
 	ld c, a
@@ -644,10 +644,10 @@ UpdateRoamMons: ; 2a30d
 	ld a, c
 	ld [wRoamMon2MapNumber], a
 
-.SkipEntei
+.SkipMOLTRES
 	ld a, [wRoamMon3MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipSuicune
+	jr z, .SkipARTICUNO
 	ld b, a
 	ld a, [wRoamMon3MapNumber]
 	ld c, a
@@ -657,7 +657,7 @@ UpdateRoamMons: ; 2a30d
 	ld a, c
 	ld [wRoamMon3MapNumber], a
 
-.SkipSuicune
+.SkipARTICUNO
 	jp _BackUpMapIndices
 ; 2a355
 
@@ -723,33 +723,33 @@ endr
 JumpRoamMons: ; 2a394
 	ld a, [wRoamMon1MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipRaikou
+	jr z, .SkipZAPDOS
 	call JumpRoamMon
 	ld a, b
 	ld [wRoamMon1MapGroup], a
 	ld a, c
 	ld [wRoamMon1MapNumber], a
-.SkipRaikou
+.SkipZAPDOS
 
 	ld a, [wRoamMon2MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipEntei
+	jr z, .SkipMOLTRES
 	call JumpRoamMon
 	ld a, b
 	ld [wRoamMon2MapGroup], a
 	ld a, c
 	ld [wRoamMon2MapNumber], a
-.SkipEntei
+.SkipMOLTRES
 
 	ld a, [wRoamMon3MapGroup]
 	cp GROUP_N_A
-	jr z, .SkipSuicune
+	jr z, .SkipARTICUNO
 	call JumpRoamMon
 	ld a, b
 	ld [wRoamMon3MapGroup], a
 	ld a, c
 	ld [wRoamMon3MapNumber], a
-.SkipSuicune
+.SkipARTICUNO
 
 	jp _BackUpMapIndices
 
@@ -806,22 +806,22 @@ RoamMaps: ; 2a40f
 ; and possible maps they can jump to.
 ; Notably missing are Route 40 and
 ; Route 41, which are water routes.
-	roam_map ROUTE_29, 2, ROUTE_30, ROUTE_46
-	roam_map ROUTE_30, 2, ROUTE_29, ROUTE_31
-	roam_map ROUTE_31, 3, ROUTE_30, ROUTE_32, ROUTE_36
-	roam_map ROUTE_32, 3, ROUTE_36, ROUTE_31, ROUTE_33
-	roam_map ROUTE_33, 2, ROUTE_32, ROUTE_34
-	roam_map ROUTE_34, 2, ROUTE_33, ROUTE_35
-	roam_map ROUTE_35, 2, ROUTE_34, ROUTE_36
-	roam_map ROUTE_36, 4, ROUTE_35, ROUTE_31, ROUTE_32, ROUTE_37
-	roam_map ROUTE_37, 3, ROUTE_36, ROUTE_38, ROUTE_42
-	roam_map ROUTE_38, 3, ROUTE_37, ROUTE_39, ROUTE_42
-	roam_map ROUTE_39, 1, ROUTE_38
-	roam_map ROUTE_42, 4, ROUTE_43, ROUTE_44, ROUTE_37, ROUTE_38
-	roam_map ROUTE_43, 2, ROUTE_42, ROUTE_44
-	roam_map ROUTE_44, 3, ROUTE_42, ROUTE_43, ROUTE_45
-	roam_map ROUTE_45, 2, ROUTE_44, ROUTE_46
-	roam_map ROUTE_46, 2, ROUTE_45, ROUTE_29
+	roam_map ROUTE_1, 2, ROUTE_3, ROUTE_2
+	roam_map ROUTE_7, 2, ROUTE_4, ROUTE_6
+	roam_map ROUTE_5, 3, ROUTE_9, ROUTE_8, ROUTE_11
+	roam_map ROUTE_12, 3, ROUTE_12, ROUTE_14, ROUTE_13
+	roam_map ROUTE_19, 2, ROUTE_16, ROUTE_17
+	roam_map ROUTE_15, 2, ROUTE_18, ROUTE_20
+	roam_map ROUTE_23, 2, ROUTE_24, ROUTE_22
+	roam_map ROUTE_21, 4, ROUTE_26, ROUTE_25, ROUTE_27, ROUTE_28
+	roam_map ROUTE_1, 3, ROUTE_3, ROUTE_16, ROUTE_12
+	roam_map ROUTE_24, 3, ROUTE_5, ROUTE_9, ROUTE_4
+	roam_map ROUTE_19, 1, ROUTE_14
+	roam_map ROUTE_22, 4, ROUTE_7, ROUTE_14, ROUTE_19, ROUTE_3
+	roam_map ROUTE_27, 2, ROUTE_12, ROUTE_23
+	roam_map ROUTE_11, 3, ROUTE_8, ROUTE_21, ROUTE_3
+	roam_map ROUTE_7, 2, ROUTE_24, ROUTE_12
+	roam_map ROUTE_1, 2, ROUTE_15, ROUTE_12
 	db -1
 ; 2a4a0
 

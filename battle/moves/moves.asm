@@ -139,7 +139,7 @@ ENDM
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,      85,  5,  10
 	move WATERFALL,    EFFECT_NORMAL_HIT,         80, WATER,    100, 15,   0
 	move CLAMP,        EFFECT_BIND,               35, WATER,     75, 10,   0
-	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,   100, 20,   0
+	move SWIFT,        EFFECT_ALWAYS_HIT,         60, FAIRY,   100, 20,   0
 	move SKULL_BASH,   EFFECT_SKULL_BASH,        100, NORMAL,   100, 15,   0
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, NORMAL,   100, 15,   0
 	move CONSTRICT,    EFFECT_SPEED_DOWN_HIT,     10, NORMAL,   100, 35,  10
@@ -237,7 +237,7 @@ ENDM
 	move MEGAHORN,     EFFECT_NORMAL_HIT,        120, BUG,       85, 10,   0
 	move DRAGONBREATH, EFFECT_PARALYZE_HIT,       60, DRAGON,   100, 20,  30
 	move BATON_PASS,   EFFECT_BATON_PASS,          0, FAIRY,   100, 40,   0
-	move ENCORE,       EFFECT_ENCORE,              0, NORMAL,   100,  5,   0
+	move ENCORE,       EFFECT_ENCORE,              0, FAIRY,   100,  5,   0
 	move PURSUIT,      EFFECT_PURSUIT,            40, DARK,     100, 20,   0
 	move RAPID_SPIN,   EFFECT_RAPID_SPIN,         20, NORMAL,   100, 40,   0
 	move SWEET_SCENT,  EFFECT_EVASION_DOWN,        0, FAIRY,   100, 20,   0

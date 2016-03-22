@@ -10314,9 +10314,9 @@ ChrisNameMenuHeader: ; 882b5
 	db 5 ; items
 	db "NEW NAME@"
 MalePlayerNameArray: ; 882c9
-	db "BLUE@"
-	db "Gary@"
-	db "Jack@"
+	db "Red@"
+	db "Chris@"
+	db "Will@"
 	db "Justin@"
 	db 2 ; displacement
 	db " NAME @" ; title
@@ -10334,10 +10334,10 @@ KrisNameMenuHeader: ; 882e5
 	db 5 ; items
 	db "NEW NAME@"
 FemalePlayerNameArray: ; 882f9
-	db "KRIS@"
-	db "AMANDA@"
-	db "JUANA@"
-	db "JODI@"
+	db "Leaf@"
+	db "Kris@"
+	db "May@"
+	db "Ariel@"
 	db 2 ; displacement
 	db " NAME @" ; title
 

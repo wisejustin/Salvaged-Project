@@ -430,7 +430,7 @@ ElmGiveMasterBallScript:
 ElmGiveTicketScript:
 	writetext ElmGiveTicketText1
 	buttonsound
-	verbosegiveitem S_S_TICKET
+	verbosegiveitem PASS
 	setevent EVENT_GOT_SS_TICKET_FROM_ELM
 	writetext ElmGiveTicketText2
 	waitbutton
@@ -1222,16 +1222,16 @@ ElmGiveTicketText1:
 	line "have something for"
 	cont "you."
 
-	para "See? It's an"
-	line "S.S.TICKET."
+	para "See? It's a"
+	line "Train Ticket."
 
 	para "Now you can catch"
 	line "#MON in JOHTO."
 	done
 
 ElmGiveTicketText2:
-	text "The ship departs"
-	line "from OLIVINE CITY."
+	text "The train departs"
+	line "from SAFFRON CITY."
 
 	para "But you knew that"
 	line "already, <PLAY_G>."

@@ -2008,11 +2008,16 @@ LassGroup:
 
 	; party
 
-	db 18, SNUBBULL
-		db SCARY_FACE
-		db CHARM
-		db BITE
-		db LICK
+		db 16, HORSEA
+		db WATER_GUN
+		db BUBBLE
+		db QUICK_ATTACK
+	 
+	db 16, SHELLDER
+		db WATER_GUN
+		db BUBBLE
+		db QUICK_ATTACK
+		db WITHDRAW
 
 	db $ff ; end
 
@@ -4910,9 +4915,8 @@ SwimmerMGroup:
 	db 0 ; normal
 
 	; party
-	db 32, HORSEA
-	db 32, HORSEA
-	db 35, SEADRA
+	db 16, HORSEA
+	db 16, SHELLDER
 
 	db $ff ; end
 
